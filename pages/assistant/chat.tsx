@@ -1,4 +1,4 @@
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 import { ChatSideNavProfile } from "@/components/ChatSideNavProfile";
 import { ChatBubble } from "@/components/ChatBubble";
 import { useRef, useState } from "react";
@@ -6,8 +6,6 @@ import axios from "axios";
 import Modal from "@/components/Modal";
 import Markdown from 'react-markdown'
 
-
-const source_serif = Source_Serif_4({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Page() {

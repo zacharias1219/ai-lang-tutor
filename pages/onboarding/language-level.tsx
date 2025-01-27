@@ -1,7 +1,4 @@
-import Image from "next/image";
 import { Inter, Source_Serif_4 } from "next/font/google";
-import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
 import { NavOnboarding } from "@/components/NavOnboarding";
 import { OnboardingSelectBox } from "@/components/OnboardingSelectBox";
 import { useRouter } from "next/router";
@@ -19,7 +16,7 @@ const items = [
 
 
 export default function Page() {
-    let router = useRouter()
+    const router = useRouter()
     const action = (value: string)=>{
         localStorage.setItem("language-level", value)
         router.push("/onboarding/objectives")

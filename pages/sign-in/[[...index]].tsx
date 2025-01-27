@@ -1,7 +1,6 @@
 import { SignIn } from "@clerk/nextjs";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter } from "next/font/google";
 
-const source_serif = Source_Serif_4({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Page() {

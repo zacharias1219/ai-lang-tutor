@@ -1,7 +1,6 @@
 import { Inter, Source_Serif_4 } from "next/font/google";
 import { NavOnboarding } from "@/components/NavOnboarding";
 import { OnboardingSelectBox } from "@/components/OnboardingSelectBox";
-import axios from "axios";
 import { useRouter } from "next/router";
 
 const source_serif = Source_Serif_4({ subsets: ["latin"] });
@@ -17,14 +16,8 @@ const items = [
 export default function Page() {
     const router = useRouter()
     const action = async (value: string)=>{
-        const user_preferences = {
-            languageLevel: localStorage.getItem("language-level"),
-            objectives: localStorage.getItem("objectives"),
-            commitment: value,
-        }
 
         try {
-        const response = await axios.post("/api/user/save_preferences", {...user_preferences});
         router.push("/assistant/chat")
 
         } catch (error) {

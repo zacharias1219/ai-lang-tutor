@@ -1,4 +1,4 @@
-import { openDB, save_preferences } from '@/lib/sqlite'
+import { save_preferences } from '@/lib/sqlite'
 import { getAuth } from '@clerk/nextjs/server'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
