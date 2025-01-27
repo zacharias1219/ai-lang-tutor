@@ -1,4 +1,4 @@
-import { EventHandler, MouseEventHandler } from "react"
+import { MouseEventHandler } from "react"
 
 export const ChatSideNavProfile = ({character, active,onClick}: {character: {profile: string, description: string, name: string}, active?: boolean, onClick?: MouseEventHandler<HTMLButtonElement>}) =>{
 

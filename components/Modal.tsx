@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState } from 'react'
+import { Fragment, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
 export default function Modal({children, setOpen, open}: {children: any, setOpen: (value: boolean)=>void, open: boolean}) {

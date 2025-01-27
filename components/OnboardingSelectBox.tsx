@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { MouseEventHandler } from "react"
 
 export const OnboardingSelectBox = ({children, action}: {children: any, action: MouseEventHandler<HTMLDivElement>}) =>{
